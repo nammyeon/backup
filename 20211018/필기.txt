@@ -1,9 +1,0 @@
-javascript
-
-slick
-
-1. 파일가져오기 (slick.css, slick min js)
-2. html구조 만들기
-3. javascript 적용하기
-
-ctr + shift + r =>캐쉬 리로드 (꼭 기억!)
