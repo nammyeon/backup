@@ -17,13 +17,19 @@ $ (function(){
    //제품슬라이드
    $('.pr_slider').slick({
          arrows:false,
-         slidesToShow: 3,
          autoplay:true,
+         slidesToShow: 3,
          
          dots:true,
        
    })
 
+   $('#content01 .btn i.xi-angle-left').on('click',function(){
+    $('.pr_slider').slick('slickPrev')
+   });
+   $('#content01 .btn i.xi-angle-right').on('click',function(){
+    $('.pr_slider').slick('slickNext')
+   });
 
 
 

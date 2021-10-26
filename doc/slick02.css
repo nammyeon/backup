@@ -27,7 +27,7 @@
 
 
 
-#content01 {padding: 150px 0;text-align: center;}
+#content01 {position: relative;padding: 150px 0;text-align: center;}
 #content01 h2 {font-size: 18px;font-weight: 100;letter-spacing: 1em;margin-bottom: 15px;}
 #content01 p {font-size: 12px;margin-bottom: 40px;line-height: 1.6;}
 #content01 .container {width: 1200px;margin: 0 auto;}
@@ -39,6 +39,9 @@
 #content01 .slick-dots li.slick-active {background: #333;}
 #content01 .slick-dots li button {display: none;}
 
+#content01 .btn i {position: absolute;top: 53% ;left: 50%;transform: translate(-50% , -50%);font-size: 20px;padding: 10px;background: #ddd;border-radius: 50%;}
+#content01 .btn i.xi-angle-left {margin-left: -585px;}
+#content01 .btn i.xi-angle-right {margin-left: 585px;}
 
 
 
