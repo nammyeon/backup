@@ -97,7 +97,7 @@ justify-content: center 는 display: flex로 가로 배열된 박스들을 가�
 
 
 
-#scroll_banner {position: absolute;top: 300px;right: 300px;transition: 1s;}
+#scroll_banner {position: absolute;top: 600px;right: 300px;transition: 1s;}
 #scroll_banner li {padding: 20px;background: #333;color: #fff;margin: 5px 0;}
 
 
