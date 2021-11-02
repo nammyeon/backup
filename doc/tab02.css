@@ -40,12 +40,12 @@ justify-content: center 는 display: flex로 가로 배열된 박스들을 가�
 #customer .container {width: 1200px;margin: 0 auto;padding: 0 15px;}
 
 #customer .tab_menu {display: flex;}
-#customer .tab_menu>li {flex: 1;text-align: center;line-height: 40px;background: #ddd;border-bottom: 2px solid #333;}
+#customer .tab_menu>li {flex: 1;text-align: center;line-height: 40px;background: #ddd;}
 #customer .tab_menu>li~li {border-left: 1px solid #fff;}
-#customer .tab_menu>li.on {border-top: 2px solid #333;border-left: 2px solid #333;border-right: 2px solid #333;border-bottom: 2px solid #ddd;}
+#customer .tab_menu>li.on {}
 #customer .tab_content {position: relative;height: 200px;}
 #customer .tab_content>div {visibility:hidden;height: 200px;position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding: 20px 20px;}
-#customer .tab_content>div.on {visibility: visible;border-bottom: 2px solid #333;border-left: 2px solid #333;border-right: 2px solid #333;}
+#customer .tab_content>div.on {visibility: visible;border: 1px solid #333;}
 
 
 
