@@ -8,6 +8,7 @@ $(function(){
         startAt:0,
         opacity:1,
         showControls:false,
+        useOnMobile:true,
     });
 
 
@@ -35,14 +36,14 @@ $(function(){
     });
 
 
-    $('#visual i.xi-pause').on('click',function(){
-        $('#bgndVideo').YTPPause();
+    $('#movie02 i.xi-pause').on('click',function(){
+        $('#mv01').YTPPause();
     });
-    $('#visual i.xi-play').on('click',function(){
-        $('#bgndVideo').YTPPlay();
+    $('#movie02 i.xi-play').on('click',function(){
+        $('#mv01').YTPPlay();
     });
-    $('#visual i.xi-tv').on('click',function(){
-        $('#bgndVideo').YTPFullscreen();
+    $('#movie02 i.xi-tv').on('click',function(){
+        $('#mv01').YTPFullscreen();
     });
 
 //------------------------------------
