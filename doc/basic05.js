@@ -71,6 +71,23 @@ $('#product04 .xi-arrow-right').on('click', function(){
 
 
 
+$('.tab_menu li').on('click', function(){
+    var idx=$(this).index();
+    // $('.tab_con>div').eq(idx).show().siblings().hide();
+    $('.tab_con>div').eq(idx).addClass('on').siblings().removeClass('on');
+});
+
+
+
+$('.tab_slider').slick({
+    arrows:false,
+    autoplay:true,
+    slidesToShow:4,
+    centerMode:true,
+});
+
+
+
 $('#link select').on('change', function (){
     var link=$(this).val();
     if(link) window.open(link);
