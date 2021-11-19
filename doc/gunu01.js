@@ -1,0 +1,10 @@
+$(function(){
+    $(".main_slider").owlCarousel({
+        loop:true,
+        items:3,
+        autoplay:true,
+        autoplayTimeout:2000,
+        nav:true,
+        dots:true,
+    });
+});
