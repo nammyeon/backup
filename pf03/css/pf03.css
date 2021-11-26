@@ -265,9 +265,9 @@ body {min-width: 1900px;}
 
     #story {padding: 100px 0;text-align: center;}
     #story h2 {font-size: 30px;letter-spacing: 0.05em;font-weight: 700;margin-bottom: 10px;}
-    #story p {font-size: 20px;font-weight: 300;margin-bottom: 40px;}
+    #story p {font-size: 20px;font-weight: 300;margin-bottom: 10px;}
     #story .case {position: relative;display: flex;flex-direction: column;justify-content: space-between;width: auto;margin: 0 auto;}
-    #story .con01 {padding: 60px 0 56px 0;}
+    #story .con01 {padding: 40px 0 56px 0;}
     #story .con01 strong {font-family: 'Noto Serif KR', serif;display: block;font-size: 4.5vw;margin-bottom: 10px;}
     #story .con01 strong:after {content: "";display: block;width: 1px;height: 25px;background: #EC3029;margin: 10px auto;}
     #story .con01 span {font-size: 3.4vw;font-weight: 300;line-height: 1.4;}
