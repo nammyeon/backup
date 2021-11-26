@@ -256,11 +256,11 @@ body {min-width: 1900px;}
 
 
 
-    #main_visual {position: relative;height: calc(100vh - 160px);background: url(../img/visual_bg.jpg) no-repeat center center/cover;}
+    #main_visual {position: relative;height: 100vh;background: url(../img/visual_bg.jpg) no-repeat center center/cover;}
     #main_visual .slogan {position: absolute;top: 35%;left: 50%;transform: translate(-50%,-70%);width: auto;margin: 0 auto;padding: 0 15px;color: #333;width: 100%;text-align: center;}
     #main_visual .slogan h2 {font-size: 5vw;margin-bottom: 40px;letter-spacing: -0.05em;font-family: 'Noto Serif KR', serif;}
     #main_visual .slogan p {font-size: 3vw;font-weight: 100;line-height: 4vw;letter-spacing: -0.025em;}
-    #main_visual .slider {position: absolute;top: 65%;left: 50%;transform: translate(-50%, -50%);width: 500px;}
+    #main_visual .slider {position: absolute;top: 65%;left: 50%;transform: translate(-50%, -50%);width: 350px;}
 
 
     #story {padding: 100px 0;text-align: center;}
