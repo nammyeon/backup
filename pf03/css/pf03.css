@@ -334,7 +334,7 @@ body {min-width: 1900px;}
 
 
 
-    #donate {padding: 150px 0;background: url(../img/dona_bg.jpg) no-repeat center center/cover;background-attachment: fixed;text-align: center;color: #fff;}
+    #donate {padding: 150px 0;background: url(../img/dona_bg.jpg) no-repeat center center/cover;background-attachment: none;text-align: center;color: #fff;}
     #donate h2 {font-size: 30px;font-weight: 500;margin-bottom: 10px;text-shadow: 0 0 2px #333;}
     #donate p {font-size: 20px;font-weight: 300;margin-bottom: 10px;letter-spacing: -0.05em;text-shadow: 0 0 2px #333;}
     #donate p:after {content: "";display: block;width: 1px;height: 25px;background: #EC3029;margin: 10px auto;}
