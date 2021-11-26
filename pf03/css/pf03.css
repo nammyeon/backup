@@ -431,3 +431,9 @@ body {min-width: 1900px;}
 
     #wrap.oo .mopen:before {content: "\e94a";font-family: xeicon;display: block;font-size: 20px;padding: 5px;border-radius: 50%;background: #fff;color: #333;}
 }
+
+
+
+/* 아이폰 border-radius 오류 */
+
+input, textarea, button { appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; }
