@@ -127,7 +127,7 @@ body {color: #333;}
 #section05 p {font-size: 20px;font-weight: 500;letter-spacing: 0.025em;margin-bottom: 40px;}
 #section05 .container01 {display: flex;flex-wrap: wrap;width: 1200px;margin: 0 auto;margin-bottom: 30px;}
 #section05 .container01 img {transition: 0.5s;cursor: pointer;}
-#section05 .container01 img:hover {transform: translate(-10px,-15px);box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.4)}
+#section05 .container01 img:hover {transform: translate(-10px,-15px);box-shadow: 5px 15px 10px rgba(63, 63, 63, 0.2)}
 #section05 .container02 {display: flex;width: 1200px;margin: 0 auto;}
 #section05 figure {width: 25%;padding: 0 15px;margin-bottom: 30px;}
 #section05 a {display: block;font-weight: 500;letter-spacing: 0.05em;padding: 9px 0 12px 0;width: 90px;border: 1px solid #333;margin: 30px auto;border-radius: 20px;}
@@ -159,7 +159,7 @@ body {color: #333;}
 
 
 #popup {position: absolute;top: 130px;left: 50%;transform: translateX(-50%);width: 600px;height: 800px;border: 1px solid #333;overflow: hidden;}
-#popup .case {position: absolute;top: 150px;left: 50%;transform: translateX(-50%);text-align: center;width: 100%;}
+#popup .case {position: absolute;top: 270px;left: 50%;transform: translateX(-50%);text-align: center;width: 100%;}
 #popup .case h2 {font-size: 30px;font-weight: 700;letter-spacing: 0.025em;line-height: 30px;margin-bottom: 52px;color: #fff;}
 #popup .case p {font-size: 18px;font-weight: 400;letter-spacing: 0em;line-height: 24px;margin-bottom: 48px;color: #fff}
 #popup .case a {display: block;margin: 0 auto;line-height: 50px;width: 150px;border-radius: 25px;background: #fff;color: #333;font-size: 20px;font-weight: 500;}
