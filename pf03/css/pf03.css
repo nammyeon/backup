@@ -404,11 +404,13 @@ body {min-width: 1900px;}
     #wrap.oo #main_visual .slogan {color: #fff;}
 
 
-    #wrap.oo #story .list {display: flex;position: absolute;bottom: 40px;right: -50px;cursor: pointer;}
-    #wrap.oo #story .list li:nth-child(2) {transform: translate(0, 60px);}
-    #wrap.oo #story .list li:nth-child(3) {transform: translate(0, 120px);}
-    #wrap.oo #story .list strong {display: block;width: 45px;line-height: 45px;background: #999;color: #fff;border-radius: 50%;}
-    #wrap.oo #story .list li.on strong {background:#EC3029;color: #fff;}
+    #wrap.oo #story .list {display: flex;justify-content: center;}
+    #wrap.oo #story .list li {position: static;bottom: 40px;right: -50px;cursor: pointer;margin: 20px 15px;}
+    #wrap.oo #story .list li:nth-child(2) {transform: none;}
+    #wrap.oo #story .list li:nth-child(3) {transform: none;}
+    #wrap.oo #story .list strong {display: block;width: 45px;line-height: 45px;background: #777;color: #fff;border-radius: 50%;}
+    #wrap.oo #story .list li.on strong {background: #EC3029;color: #fff;}
+
 
 
 
