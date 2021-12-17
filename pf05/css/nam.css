@@ -50,7 +50,7 @@ html {min-width: 1900px;}
 #main_visual .slogan a:after {content: "\e940";font-family: xeicon;display: inline-block;font-size: 25px;vertical-align: middle;padding: 0 5px;}
 #main_visual .slogan a:hover:after {animation: mright 0.8s infinite;}
 
-#main_visual .itm01 .slogan {color: #333;padding: 0 245px;}
+#main_visual .itm01 .slogan {color: #333;padding: 0 0;}
 #main_visual .itm01 .slogan h2 {text-shadow: none;}
 #main_visual .itm01 .slogan p {text-shadow: none;font-weight: 300;}
 #main_visual .itm02 .slogan h2 {text-indent: -5px;}
@@ -88,6 +88,8 @@ html {min-width: 1900px;}
 #imagine figure {position: relative;}
 #imagine .plus {color: #fff;}
 #imagine .plus>i {font-size: 28px;text-align: center;line-height: 50px;cursor: pointer;}
+#imagine .plus>i:hover:before {content: "view";display: block;}
+
 #imagine .plus span {display: block;font-size: 16px;text-align: center;background: rgba(0,0,0,0.6);width: 130%;border-radius: 15px;opacity: 0;transition: 0.2s;}
 #imagine .plus>i:hover span {opacity: 1;}
 #imagine .plus .que_auto {position: absolute;bottom: 150px;left: 450px;}
@@ -151,7 +153,7 @@ html {min-width: 1900px;}
 
 #life {position: relative;background: #f4f4f4;padding: 150px 0;}
 #life .l_top {}
-#life h2 {font-size: 40px;line-height: 45px;margin-bottom: 20px;width: 1200px;margin: 0 auto 20px auto;padding: 0 15px;}
+#life h2 {font-size: 40px;line-height: 45px;margin-bottom: 20px;width: 1200px;margin: 0 auto 50px auto;padding: 0 15px;}
 #life .l_right {display: flex;justify-content: center;margin-bottom: 20px;}
 #life figure {width: 292px;height: 400px;background: url(../img/find01.jpg) no-repeat left center;overflow: hidden;cursor: pointer;transition: 0.8s;}
 #life figure.con02 {background: url(../img/find02.jpg) no-repeat left center;}
