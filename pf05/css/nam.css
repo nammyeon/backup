@@ -7,8 +7,7 @@ html {min-width: 1900px;}
 #wrap {color: #333;}
 
 #header {position: sticky;top: 0;left: 0;background: #333;color: #fff;line-height: 100px;transition: 0.4s;z-index: 1000;}
-#header.on {opacity: 0;}
-#header.on:hover {opacity: 1;}
+#header.on {opacity: 0;visibility: hidden;}
 #header .h_container {display: flex;width: 1700px;margin: 0 auto;}
 #header .gnb {font-size: 19px;font-weight: 500;letter-spacing: 0.05rem;padding: 0 100px;}
 #header .gnb>ul {display: flex;}
@@ -85,7 +84,7 @@ html {min-width: 1900px;}
 
 
 #imagine {padding: 150px 0 0 0;background: #f4f4f4;}
-#imagine h2 {font-size: 40px;line-height: 45px;margin-bottom: 20px;text-align: center;}
+#imagine h2 {font-size: 40px;line-height: 45px;margin-bottom: 50px;text-align: center;}
 #imagine figure {position: relative;}
 #imagine .plus {color: #fff;}
 #imagine .plus>i {font-size: 28px;text-align: center;line-height: 50px;cursor: pointer;}
@@ -99,14 +98,14 @@ html {min-width: 1900px;}
 #imagine .plus .lime {position: absolute;top: 500px;right: 150px;}
 #imagine .plus .tiam {position: absolute;bottom: 200px;right: 150px;letter-spacing: 0.07rem;}
 
-#imagine .p_slide {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 630px;height: 470px;background: #f2f2f2;color: #333;opacity: 0;visibility: hidden;transition: 0.5s;z-index: 999;}
+#imagine .p_slide {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 700px;height: 550px;background: #f2f2f2;padding: 50px;color: #333;opacity: 0;visibility: hidden;transition: 0.5s;z-index: 999;}
 #imagine .p_slide.on {opacity: 1;visibility: visible;}
 #imagine .p_slide i {position: absolute;top: 0;right: 0;font-size: 50px;color: #333;background: #ddd;cursor: pointer;z-index: 999;}
 
 #imagine .popup {width: 630px;height: 500px;}
 #imagine .popup figure {width: 300px;margin: 0 auto;padding: 20px 0 0 0;z-index: 888;margin-bottom: 40px;}
 #imagine .p_text {padding: 0 30px;}
-#imagine .p_text>strong {float: left;font-size: 19px;font-weight: 500;line-height: 26px;width: 184px;text-align: center;}
+#imagine .p_text>strong {float: left;font-size: 19px;font-weight: 500;line-height: 26px;width: 184px;text-align: left;}
 #imagine .p_text .right {float: right;width: 320px;}
 #imagine .p_text .right strong {display: block;font-size: 19px;font-weight: 500;line-height: 26px;margin-bottom: 5px;}
 #imagine .p_text .right span {display: block;font-size: 17px;font-weight: 300;margin-bottom: 15px;flex-flow: wrap column;}
@@ -127,7 +126,7 @@ html {min-width: 1900px;}
 #new .con01 figure {margin-left: auto;border-radius: 250px 0 0 0;overflow: hidden;}
 #new .con01 .txt {padding: 50px 0 0 20px;}
 #new .con01 span {display: block;font-size: 17px;font-weight: 300;line-height: 20px;}
-#new .con01 span:first-child {margin-bottom: 20px;}
+#new .con01 span:nth-child(2) {margin-bottom: 5px;}
 #new .con01 strong {display: block;font-size: 25px;font-weight: 700;line-height: 30px;margin-bottom: 40px;}
 #new .con01 p {display: block;font-size: 17px;font-weight: 300;line-height: 1.4;margin-bottom: 30px;}
 #new .con01 a {font-size: 17px;font-weight: 300;}
@@ -255,11 +254,12 @@ html {min-width: 1900px;}
 
     .container {width: auto;margin: 0 auto;}
 
+    
 
     #wrap {color: #333;}
 
     #header {position: fixed;top: 0;left: -100%;height: 100vh;width: calc(100% - 80px);background: #333;color: #fff;line-height: 40px;transition: 0.4s;border-right: 1px solid #555;z-index: 1000;}
-    #header.on {opacity: 1;}
+    #header.on {opacity: 1;visibility: visible;}
     #header.on:hover {opacity: 1;}
     #header.oo {left: 0;}
     #header h1 {position: fixed;top: 20px;left: 15px;transition: 0.4s;}
@@ -267,13 +267,13 @@ html {min-width: 1900px;}
     #header.oo h1 {opacity: 1;}
 
     #header .h_container {display: flex;flex-direction: column;width: auto;margin: 0 auto;}
-    #header .gnb {font-size: 17px;font-weight: 500;letter-spacing: 0.05rem;padding: 0 15px 0 15px;margin: 100px 0 0 0;height: 400px;overflow: scroll;}
+    #header .gnb {font-size: 17px;font-weight: 500;letter-spacing: 0.05rem;padding: 0 15px 0 15px;margin: 100px 0 0 0;height: 400px;overflow-y: scroll;}
     #header .gnb>ul {display: flex;flex-direction: column;}
     #header .gnb>ul>li>a:hover {color: #ffd5e3;}
     #header .gnb>ul>li {position: relative;}
     #header .gnb>ul>li>a {display: block;padding: 0 0px;}
 
-    #header .d_nav {display: none;overflow: scroll;position: static;top: 100px;left: 0;font-size: 17px;font-weight: 400;line-height: 40px;width: auto;padding: 0 0;background: #444;}
+    #header .d_nav {display: none;overflow-y: scroll;position: static;top: 100px;left: 0;font-size: 17px;font-weight: 400;line-height: 40px;width: auto;padding: 0 0;background: #444;}
 
    
 
@@ -348,7 +348,7 @@ html {min-width: 1900px;}
 
 
     #imagine {padding: 100px 0 0 0;background: #f4f4f4;}
-    #imagine h2 {font-size: 30px;line-height: 45px;margin-bottom: 20px;text-align: center;}
+    #imagine h2 {font-size: 30px;line-height: 45px;margin-bottom: 30px;text-align: center;}
     #imagine figure {position: relative;}
     #imagine figure img {width: 100%;}
     #imagine .plus {display: none;color: #fff;}
@@ -363,15 +363,15 @@ html {min-width: 1900px;}
     #imagine .plus .lime {position: absolute;top: 500px;right: 150px;}
     #imagine .plus .tiam {position: absolute;bottom: 200px;right: 150px;letter-spacing: 0.07rem;}
 
-    #imagine .p_slide {position: static;top: 50%;left: 50%;transform: translate(0,0);width: auto;height: 470px;background: #f2f2f2;color: #333;opacity: 1;visibility: visible;transition: 0.5s;z-index: 999;}
+    #imagine .p_slide {position: static;top: 50%;left: 50%;transform: translate(0,0);width: auto;height: auto;padding: 40px 0;background: #f2f2f2;color: #333;opacity: 1;visibility: visible;transition: 0.5s;z-index: 999;}
     #imagine .p_slide.on {opacity: 1;visibility: visible;}
     #imagine .p_slide i {display: none;position: absolute;top: 0;right: 0;font-size: 50px;color: #333;cursor: pointer;z-index: 999;}
 
     #imagine .popup {width: auto;height: auto}
-    #imagine .popup figure {width: 200px;margin: 0 auto;padding: 20px 0 0 0;z-index: 888;margin-bottom: 40px;}
+    #imagine .popup figure {width: 200px;margin: 0 auto;padding: 20px 0;z-index: 888;margin-bottom: 20px;}
     #imagine .p_text {padding: 0 30px;text-align: center;}
-    #imagine .p_text>strong {display: block;float: none;font-size: 19px;font-weight: 700;line-height: 26px;padding: 0 0;width: auto;margin-bottom: 10px;}
-    #imagine .p_text .right {float: left;}
+    #imagine .p_text>strong {display: block;float: none;font-size: 19px;font-weight: 700;line-height: 26px;padding: 0 0;width: auto;text-align: center;margin-bottom: 30px;}
+    #imagine .p_text .right {float: none;margin: 0 auto;}
     #imagine .p_text .right strong {display: block;font-size: 19px;font-weight: 400;line-height: 26px;margin-bottom: 5px;}
     #imagine .p_text .right span {display: block;font-size: 17px;font-weight: 300;margin-bottom: 15px;flex-flow: wrap column;}
 
@@ -392,7 +392,7 @@ html {min-width: 1900px;}
     #new .con01 figure img {width: 100%;}
     #new .con01 .txt {padding: 10px 0 0 10px;}
     #new .con01 span {display: block;font-size: 15px;font-weight: 300;line-height: 1.4;}
-    #new .con01 span:first-child {margin-bottom: 20px;}
+    #new .con01 span:first-child {margin-bottom: 0;}
     #new .con01 strong {display: block;font-size: 21px;font-weight: 700;line-height: 30px;margin-bottom: 20px;}
     #new .con01 p {display: block;font-size: 4vw;font-weight: 300;line-height: 1.4;margin-bottom: 30px;}
     #new .con01 p:nth-child(5) {display: none;}
@@ -421,7 +421,7 @@ html {min-width: 1900px;}
 
     #life {position: relative;background: #f4f4f4;padding: 100px 0;}
     #life .l_top {}
-    #life h2 {font-size: 30px;line-height: 1.4;margin-bottom: 20px;width: auto;margin: 0 auto 20px auto;padding: 0 15px;}
+    #life h2 {font-size: 30px;line-height: 1.4;margin-bottom: 30px;width: auto;margin: 0 auto 20px auto;padding: 0 15px;}
     #life .l_right {display: flex;flex-direction: column;justify-content: center;margin-bottom: 20px;}
     #life figure {width: auto;height: 200px;background: url(../img/find01.jpg) no-repeat center center/cover;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;overflow: hidden;cursor: pointer;transition: 0.8s;padding: 0 15px;color: #fff;}
     #life figure.con02 {background: url(../img/find02.jpg) no-repeat center center/cover;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;}
@@ -439,7 +439,7 @@ html {min-width: 1900px;}
     @keyframes mright {
         to {padding: 0 0 0 30px;}
     }
-    #life figure.on {width: auto;height: 200px;background: url(../img/find01.jpg) no-repeat center center/cover;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;overflow: hidden;cursor: pointer;transition: 0.8s;padding: 0 15px;color: #fff;}
+    #life figure.on {width: auto;height: 200px;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;overflow: hidden;cursor: pointer;transition: 0.8s;padding: 0 15px;color: #fff;}
     #life figure.on strong {display: block;font-size: 21px;padding: 20px 0;text-align: left;letter-spacing: 0.07em;}
     #life figure.on p {font-size: 15px;font-weight: 100;line-height: 21px;opacity: 1;height: auto;color: #fff;transition: 0.8s;margin-bottom: 20px;padding: 0 0 ;}
     #life figure.on a {position: relative;font-size: 13px;font-weight: 300;letter-spacing: 0.05em;margin: 0 0 0 0}
@@ -500,7 +500,7 @@ html {min-width: 1900px;}
     #footer .f_bottom address {text-align: left;font-size: 13px;font-weight: 100;letter-spacing: 0.075em;}
 
 
-    .Mopen {display: block;position: fixed;top: 15px;right: 15px;font-size: 31px;background: #ddd;color: #333;padding: 5px;border-radius: 50%}
+    .Mopen {display: block;position: fixed;top: 15px;right: 15px;font-size: 31px;background: #ddd;color: #333;padding: 5px;border-radius: 50%;z-index: 1000;}
 
 
 
