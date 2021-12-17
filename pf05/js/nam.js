@@ -12,7 +12,7 @@ $(function(){
     $('#main_visual').slick({
         arrows:false,
         fade:true,
-        // autoplay:true,
+        autoplay:true,
         pauseOnFocus:false,
         pauseOnHover:false,
     });
