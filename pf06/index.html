@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>병원</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/nam.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/nam.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <header class="header">
+        <div class="container">
+            <h1>
+                <a href="#">logo</a>
+            </h1>
+            <div class="menu_btn">
+                <i></i>
+            </div>
+        </div>
+        <div class="menu">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#!">태흥당한의원</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">병원 소개</a></li>
+                            <li><a href="#!">의료진 소개</a></li>
+                            <li><a href="#!">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">태흥당입원실</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">입원실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">태흥당 Q&amp;A</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">약침치료 Q&amp;A</a></li>
+                            <li><a href="#!">한약 Q&amp;A</a></li>
+                            <li><a href="#!">지방분해침 Q&amp;A</a></li>
+                            <li><a href="#!">태흥당홍삼 / 녹용홍삼 Q&amp;A</a></li>
+                            <li><a href="#!">공진단 / 경옥고 Q&amp;A</a></li>
+                            <li><a href="#!">교통사고후유증 / 추나 Q&amp;A</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">불면증클리닉</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">불면증클리닉</a></li>
+                            <li><a href="#!">불면증 Q&amp;A</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">다이어트클리닉</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">다이어트 Q&amp;A</a></li>
+                            <li><a href="#!">다이어트 before&amp;after</a></li>
+                            <li><a href="#!">태흥당다이어트</a></li>
+                            <li><a href="#!">산후부종</a></li>
+                            <li><a href="#!">소아비만</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">교통사고후유증</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">교통사고후유증</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">소아청소년클리닉</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">성장부진</a></li>
+                            <li><a href="#!">성조숙증</a></li>
+                            <li><a href="#!">소아비염</a></li>
+                            <li><a href="#!">ADHD</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">척추·관절클리닉</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">허리디스크</a></li>
+                            <li><a href="#!">목디스크</a></li>
+                            <li><a href="#!">척추관협착증</a></li>
+                            <li><a href="#!">턱관절장애</a></li>
+                            <li><a href="#!">족저근막염</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">신경정신클리닉</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">공황장애</a></li>
+                            <li><a href="#!">우울증</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">통증클리닉</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">허리디스크</a></li>
+                            <li><a href="#!">목디스크</a></li>
+                            <li><a href="#!">척추관협착증</a></li>
+                            <li><a href="#!">턱관절장애</a></li>
+                            <li><a href="#!">족저근막염</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">한방내과클리닉</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">역류성식도염</a></li>
+                            <li><a href="#!">위염</a></li>
+                            <li><a href="#!">과민성대장증후군</a></li>
+                            <li><a href="#!">천식/감기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">여성클리닉</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">난임</a></li>
+                            <li><a href="#!">산전/후관리</a></li>
+                            <li><a href="#!">생리불순</a></li>
+                            <li><a href="#!">생리통</a></li>
+                            <li><a href="#!">질염</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">공진단·생활보약</a>
+                        <ul class="d_nav">
+                            <li><a href="#!">공진단</a></li>
+                            <li><a href="#!">경옥고</a></li>
+                            <li><a href="#!">홍삼/녹용홍삼/어린이홍삼</a></li>
+                            <li><a href="#!">장쾌환</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="main_visual">
+            <div class="main_slider">
+                <figure class="Mitem01"></figure>
+                <figure class="Mitem02"></figure>
+                <figure class="Mitem03"></figure>
+            </div>
+            <div class="txt">
+                <p>진심진료 정성진료 근본치료</p>
+                <h2>
+                    태흥당한의원은
+                    한결같은 정직함입니다.
+                </h2>
+            </div>            
+        </section>
+
+
+        <section class="diag">
+            <div class="container">
+                <div class="txt">
+                    <p>TAEHEUNDDANG KOREAN MEDICINE CLINIC</p>
+                    <h2>끊임없는 연구와 노력으로<br>최고의 진료와 결과를 <strong>약속</strong>드립니다.</h2>
+                </div>
+                <div class="right">
+                    <div class="d_slide">
+                        <div class="case">
+                            <a href="#!">
+                                <figure><img src="./img/diag_01.jpg" alt=""></figure>
+                                <strong>다이어트 클리닉</strong>
+                                <span>오랜시간 축척되어온 다이어트 처방과 다이어트 관리 노하우를 기반으로<br>개인의 체질에 맞게 진료하여 최고의 효과를 추구합니다.</span>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#!">
+                                <figure><img src="./img/diag_02.jpg" alt=""></figure>
+                                <strong>다이어트 클리닉</strong>
+                                <span>태흥당한의원 성장치료는 유아, 소아, 사춘기별로 적절한 치료를 진행합니다.<br>성장부진의 원인이 어느 부분에 있는지에 따라 정확한 진단과 처방을 내립니다.</span>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#!">
+                                <figure><img src="./img/diag_03.jpg" alt=""></figure>
+                                <strong>다이어트 클리닉</strong>
+                                <span>환자의 체질과 증상, 원인에 따라 충분한 검사와 진료 후<br>침, 부항, 온열치료, 한약처방으로 교통사고 후유증 치료를 합니다.</span>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#!">
+                                <figure><img src="./img/diag_04.jpg" alt=""></figure>
+                                <strong>다이어트 클리닉</strong>
+                                <span>인삼이나 홍삼이 맞지 않는 열이 많은 체질도 경옥고라면 괜찮습니다.</span>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#!">
+                                <figure><img src="./img/diag_05.jpg" alt=""></figure>
+                                <strong>다이어트 클리닉</strong>
+                                <span>태흥당한의원은 산모의 자궁안정화를 위해 노력합니다.</span>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#!">
+                                <figure><img src="./img/diag_06.jpg" alt=""></figure>
+                                <strong>다이어트 클리닉</strong>
+                                <span>태흥당한의원의 어깨 통증 치료는 <br>손상된 연골 재생과 어깨 주변근육 강화로 재발을 방지합니다.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="qna">
+            <h2>태흥당 Q&amp;A</h2>
+            <p>태흥당 클리닉에서 다양한 궁금증을 해결해 드립니다.</p>
+            <a href="#!">Q&amp;A 바로가기</a>
+        </section>
+
+
+        <section class="doctor">
+            <h2>의료진 소개</h2>
+            <p>끊임없는 연구와 노력으로 최고의 진료와 결과를 약속드립니다.</p>
+            <div class="container">
+                
+                <div class="slide">
+                    <div class="text_slide">
+                        <div class="case">
+                            <strong>대표원장 윤여진</strong>
+                            <span>집중분야 : 다이어트·여성질환·소아성장</span>
+                            <ul>
+                                <li>·한의학 석사</li>
+                                <li>·연세대학교 졸업</li>
+                                <li>·부산대 한의학전문대학원 졸업</li>
+                                <li>·놀이심리상담사 1급</li>
+                                <li>·Tianjin Univ. of Traditional Chinese Medicine 임상실습 수료</li>
+                                <li>·한방비만학회 회원</li>
+                                <li>·통합심신의학연구회 회원</li>
+                                <li>·現) 태흥당한의원 진료원장</li>
+                            </ul>
+                        </div>
+                        <div class="case">
+                            <strong>원장 최영규</strong>
+                            <span>집중분야 : 보약·면역강화·신경정신</span>
+                            <ul>
+                                <li>·동의대학교 한의과대학졸업</li>
+                                <li>·동의대학교 한의과대학원 침구학과 수석입학</li>
+                                <li>·침구학석사 학위취득</li>                                
+                                <li>·98년 태흥당한의원 개원</li>                       
+                                <li>·대한침구학회 정회원</li>                       
+                                <li>·대한약침학회 정회원</li>                       
+                                <li>·대한한의통증제형학회 정회원</li>                       
+                                <li>·대한약침학회 정회원</li>                       
+                                <li>·대한한의통증체형학회 정회원</li>                       
+                                <li>·대한약침학회 혈기보양약침 교육수료</li>                       
+                                <li>·웃음치료교육 수료</li>                       
+                                <li>·부경보건고등학교 한방과 출강</li>                       
+                                <li>·現) 태흥당한의원 진료원장</li>                       
+                            </ul>
+                        </div>
+                        <div class="case">
+                            <strong>대표원장 윤여진</strong>
+                            <span>집중분야 : 다이어트·여성질환·소아성장</span>
+                            <ul>
+                                <li>·한의학 석사</li>
+                                <li>·연세대학교 졸업</li>
+                                <li>·부산대 한의학전문대학원 졸업</li>
+                                <li>·놀이심리상담사 1급</li>
+                                <li>·Tianjin Univ. of Traditional Chinese Medicine 임상실습 수료</li>
+                                <li>·한방비만학회 회원</li>
+                                <li>·통합심신의학연구회 회원</li>
+                                <li>·現) 태흥당한의원 진료원장</li>
+                            </ul>
+                        </div>
+                        <div class="case">
+                            <strong>대표원장 윤여진</strong>
+                            <span>집중분야 : 다이어트·여성질환·소아성장</span>
+                            <ul>
+                                <li>·한의학 석사</li>
+                                <li>·연세대학교 졸업</li>
+                                <li>·부산대 한의학전문대학원 졸업</li>
+                                <li>·놀이심리상담사 1급</li>
+                                <li>·Tianjin Univ. of Traditional Chinese Medicine 임상실습 수료</li>
+                                <li>·한방비만학회 회원</li>
+                                <li>·통합심신의학연구회 회원</li>
+                                <li>·現) 태흥당한의원 진료원장</li>
+                            </ul>
+                        </div>
+                        <div class="case">
+                            <strong>대표원장 윤여진</strong>
+                            <span>집중분야 : 다이어트·여성질환·소아성장</span>
+                            <ul>
+                                <li>·한의학 석사</li>
+                                <li>·연세대학교 졸업</li>
+                                <li>·부산대 한의학전문대학원 졸업</li>
+                                <li>·놀이심리상담사 1급</li>
+                                <li>·Tianjin Univ. of Traditional Chinese Medicine 임상실습 수료</li>
+                                <li>·한방비만학회 회원</li>
+                                <li>·통합심신의학연구회 회원</li>
+                                <li>·現) 태흥당한의원 진료원장</li>
+                            </ul>
+                        </div>
+                        <div class="case">
+                            <strong>대표원장 윤여진</strong>
+                            <span>집중분야 : 다이어트·여성질환·소아성장</span>
+                            <ul>
+                                <li>·한의학 석사</li>
+                                <li>·연세대학교 졸업</li>
+                                <li>·부산대 한의학전문대학원 졸업</li>
+                                <li>·놀이심리상담사 1급</li>
+                                <li>·Tianjin Univ. of Traditional Chinese Medicine 임상실습 수료</li>
+                                <li>·한방비만학회 회원</li>
+                                <li>·통합심신의학연구회 회원</li>
+                                <li>·現) 태흥당한의원 진료원장</li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    
+                    
+                    <div class="people_slide">
+                        <figure>
+                            <img src="./img/pe01.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/pe02.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/pe03.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/pe04.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/pe05.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/pe02.png" alt="">
+                        </figure>
+                    </div>
+                
+                </div>
+                <div class="Dbtn">
+                    <ul>
+                        <li><img src="./img/dBtn_01.jpg" alt=""></li>
+                        <li><img src="./img/dBtn_02.jpg" alt=""></li>
+                        <li><img src="./img/dBtn_03.jpg" alt=""></li>
+                        <li><img src="./img/dBtn_04.jpg" alt=""></li>
+                        <li><img src="./img/dBtn_05.jpg" alt=""></li>
+                        <li><img src="./img/dBtn_06.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="info">
+                <ul>
+                    <li>상호명 : 태흥당한의원</li>
+                    <li>대표 : 최영규</li>
+                    <li>전화 : 051-291-9188</li>
+                    <li>사업자등록번호 : 603-90-17596</li>
+                    <li>주소 : 부산광역시 사하구 낙동남로 1414 삼영빌딩 2/3층</li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <div class="time">
+                    <span>진료안내</span>
+                    <dl>
+                        <dt>월화수목</dt>
+                        <dd>AM 9:30 ~ PM 9:00(야간진료)</dd>
+                        <dt>금</dt>
+                        <dd>AM 9:30 ~ PM 7:00</dd>
+                        <dt>토, 일, 공휴일</dt>
+                        <dd>AM 9:30 ~ PM 3:00</dd>
+                        <dt>점심시간</dt>
+                        <dd>AM 12:30 ~ PM 2:00</dd>
+                    </dl>
+                </div>
+
+                <div class="sns">
+                    <a href="#!"><i class="xi-instagram"></i></a>
+                    <a href="#!"><i class="xi-naver"></i></a>
+                    <a href="#!"><i class="xi-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
