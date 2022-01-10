@@ -2,7 +2,7 @@ $(function(){
 // --------------------------------
     $(window).on('scroll',function(){
         var sct=$(window).scrollTop();
-        console.log(sct);
+        // console.log(sct);
         if(sct>0) {
             $('#header').addClass('on')
         }else $('#header').removeClass('on')
@@ -19,7 +19,7 @@ $(function(){
     
     $('.main_slider').slick({
       arrows:false,
-      autoplay:true,
+      // autoplay:true,
       pauseOnHover:false,
       pauseOnFocus:false,
       dots:true,
