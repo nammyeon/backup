@@ -4,7 +4,7 @@
     --mc: #003976;
 }
 
-html {font-size: 20px;max-width: 95rem;}
+html {font-size: 20px;min-width: 95rem;}
 body {font-size: 0.8rem;}
 
 /* * {outline: 1px solid #ff0;} */
@@ -45,7 +45,7 @@ body {font-size: 0.8rem;}
 #header .gnb:before {content: "";display: block;width: 100%;height: calc(100vh - 8rem);background: var(--mc);position: absolute;top: 8rem;left: 0;opacity: 0;visibility: hidden;transition: 0.5s;z-index: 1;}
 #header .gnb:hover:before {opacity: 0.9;visibility: visible;}
 
-#header .gnb .d_nav {display: flex;flex-wrap: wrap;position: absolute;top: 5rem;left: 0;font-size: 0.95rem;font-weight: 500;line-height: 1.4;color: #f7f7f7;opacity: 0;visibility: hidden;z-index: 888;}
+#header .gnb .d_nav {display: flex;flex-wrap: wrap;position: absolute;top: 5rem;left: 0;height: calc(100vh - 8rem);font-size: 0.95rem;font-weight: 500;line-height: 1.4;color: #f7f7f7;opacity: 0;visibility: hidden;z-index: 888;}
 #header .gnb .d_nav>li {padding: 2rem;}
 #header .gnb .d_nav>li>a {display: block;margin-bottom: 1rem;padding: 0 2rem 0 0;}
 #header .gnb>ul>li:hover .d_nav {transition: 0.4s;opacity: 1;visibility: visible;}
@@ -229,7 +229,7 @@ body {font-size: 0.8rem;}
         --mc: #003976;
     }
 
-    html {font-size: 20px;}
+    html {font-size: 20px;min-width: auto;}
     body {font-size: 0.8rem;}
 
     /* * {outline: 1px solid #ff0;} */
@@ -281,7 +281,7 @@ body {font-size: 0.8rem;}
     #header .gnb:before {content: "";display: none;width: 100%;height: calc(100vh - 8rem);background: var(--mc);position: absolute;top: 8rem;left: 0;opacity: 0;visibility: hidden;transition: 0.5s;z-index: 1;}
     #header .gnb:hover:before {opacity: 0.9;visibility: visible;}
     
-    #header .gnb .d_nav {display: none;flex-wrap: wrap;position: static;top: 5rem;left: 0;font-size: 0.95rem;font-weight: 500;line-height: 1.4;color: #777;opacity: 1;visibility: visible;z-index: 888;}
+    #header .gnb .d_nav {display: none;flex-wrap: wrap;position: static;top: 5rem;left: 0;height: auto;font-size: 0.95rem;font-weight: 500;line-height: 1.4;color: #777;opacity: 1;visibility: visible;z-index: 888;}
     #header .gnb .d_nav>li {padding: 0 1rem;}
     #header .gnb .d_nav>li>a {display: block;margin-bottom: 0;padding: 0 1.5rem;line-height: 2rem;}
     #header .gnb .d_nav>li>a.on {background: var(--mc);color: #f7f7f7;}
