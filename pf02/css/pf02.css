@@ -2,6 +2,8 @@ html {min-width: 1900px;}
 
 #wrap {color: #333;}
 
+
+
 #header {position: fixed;top: 0;left: 0;line-height: 150px;width: 1900px;transition: 0.4s;z-index: 999;}
 #header:hover {background:#fff;border-bottom: 1px solid #ddd;line-height: 95px;width: 1900px;opacity: 0.9;}
 #header h1 {padding: 0 15px;}
@@ -52,9 +54,9 @@ html {min-width: 1900px;}
 
 #model {position: relative;padding: 150px 0;text-align: center;}
 #model h2 {font-size: 31px;font-weight: 700;letter-spacing: 0.05em;margin-bottom: 40px;}
-#model .container {width: 1200px;margin: 0 auto;}
-#model figure {padding: 0 15px;letter-spacing: 0.05em;}
-#model figure img {margin-bottom: 10px;}
+#model .container {width: 1200px;margin: 0 auto;padding: 0 15px;}
+#model figure {letter-spacing: 0.05em;}
+#model figure img {margin: 0 auto 10px auto;}
 #model figure strong {display: block;margin-bottom: 7px;font-weight: 300;font-size: 16px;}
 #model figure span {display: inline-block;font-weight: 400;font-size: 19px;}
 #model figure span:before {content: "₩";display: inline-block;margin-right: 2px;}
@@ -225,7 +227,7 @@ html {min-width: 1900px;}
 
     #model {position: relative;padding: 150px 0;text-align: center;}
     #model h2 {font-size: 27px;font-weight: 700;letter-spacing: 0.05em;margin-bottom: 40px;}
-    #model .container {width: auto;margin: 0 auto;}
+    #model .container {width: auto;margin: 0 auto;padding: 0 0;}
     #model figure {padding: 0 15px;}
     #model figure img {justify-content: center;margin: 0 auto;}
     #model figure strong {display: block;margin-bottom: 7px;font-weight: 300;font-size: 16px;}
