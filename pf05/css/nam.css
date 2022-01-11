@@ -23,7 +23,20 @@ html {min-width: 1900px;}
 
 #header .dd_nav {font-size: 15px;font-weight: 100;padding: 10px 0;}
 
-#header .rightNav {display: flex;margin-left: auto;}
+#header .rightNav {position: relative;display: flex;margin-left: auto;}
+#header .rightNav .search_btn i {position: relative;cursor: pointer;}
+#header .rightNav .search_btn i.on {color: #333;}
+#header .rightNav .search_btn i.on:after {content: "\e921";font-family: xeicon!important;display: block;position: absolute;top: 0;left: 0;color: #fff;}
+#header .rightNav .search_btn i.on:hover:after {color: #ddd;}
+
+#header .searCase {position: absolute;top: 0;left: 0;background: #333;padding: 20px;width: 100%;opacity: 0;visibility: hidden;transition: 0.3s;}
+#header .searCase.on {top: 100px;opacity: 1;visibility: visible;}
+#header .searCase form {display: flex;}
+#header .searCase form input {outline: none;border: none;padding: 5px 10px;}
+#header .searCase form button {margin-left: auto;}
+#header .searCase form button i {display: block;}
+#header .searCase i.xi-close {display: none;}
+
 #header .rightNav i {font-size: 20px;vertical-align: middle;padding: 0 10px 0 0;}
 #header .rightNav i:hover {color: #ddd;}
 #header .rightNav>ul {display: flex;}
@@ -88,7 +101,6 @@ html {min-width: 1900px;}
 #imagine figure {position: relative;}
 #imagine .plus {color: #fff;}
 #imagine .plus>i {font-size: 28px;text-align: center;line-height: 50px;cursor: pointer;}
-#imagine .plus>i:hover:before {content: "view";display: block;}
 
 #imagine .plus span {display: block;font-size: 16px;text-align: center;background: rgba(0,0,0,0.6);width: 130%;border-radius: 15px;opacity: 0;transition: 0.2s;}
 #imagine .plus>i:hover span {opacity: 1;}
@@ -110,7 +122,7 @@ html {min-width: 1900px;}
 #imagine .p_text>strong {float: left;font-size: 19px;font-weight: 500;line-height: 26px;width: 184px;text-align: left;}
 #imagine .p_text .right {float: right;width: 320px;}
 #imagine .p_text .right strong {display: block;font-size: 19px;font-weight: 500;line-height: 26px;margin-bottom: 5px;}
-#imagine .p_text .right span {display: block;font-size: 17px;font-weight: 300;margin-bottom: 15px;flex-flow: wrap column;}
+#imagine .p_text .right span {display: block;font-size: 17px;font-weight: 300;line-height: 1.4;margin-bottom: 15px;flex-flow: wrap column;}
 
 #imagine .popup .color:after {content: "";display: inline-block;width: 15px;height: 15px;border-radius: 50%;margin:0 0 0 7px}
 #imagine .popup .que_auto .color:after {background: #A2948D;}
@@ -156,13 +168,15 @@ html {min-width: 1900px;}
 #life h2 {font-size: 40px;line-height: 45px;margin-bottom: 20px;width: 1200px;margin: 0 auto 50px auto;padding: 0 15px;}
 #life .l_right {display: flex;justify-content: center;margin-bottom: 20px;}
 #life figure {width: 292px;height: 400px;background: url(../img/find01.jpg) no-repeat left center;overflow: hidden;cursor: pointer;transition: 0.8s;}
+#life figure i {display: none;}
+
 #life figure.con02 {background: url(../img/find02.jpg) no-repeat left center;}
 #life figure.con03 {background: url(../img/find03.jpg) no-repeat left center;color: #fff;}
 #life figure.con04 {background: url(../img/find04.jpg) no-repeat left center;}
 #life figure.con04 a {color: #fff;}
 
-#life figure strong {display: block;font-size: 21px;padding: 50px 0;text-align: center;letter-spacing: 0.07em;}
-#life figure p {font-size: 17px;font-weight: 100;line-height: 21px;opacity: 0;height: 200px;color: #fff;transition: 0.8s;}
+#life figure strong {display: block;font-size: 21px;padding: 50px 0;text-align: center;letter-spacing: 0.07em;text-overflow: ellipsis;white-space: nowrap;}
+#life figure p {font-size: 17px;font-weight: 100;line-height: 21px;opacity: 0;height: 200px;color: #fff;}
 #life figure a {position: relative;font-size: 13px;font-weight: 300;letter-spacing: 0.05em;margin: 0 0 0 50px;}
 #life figure a:after {content: "\e940";font-family: xeicon;display: inline-block;font-size: 21px;vertical-align: middle;padding: 0 5px;}
 
@@ -172,7 +186,7 @@ html {min-width: 1900px;}
 }
 #life figure.on {width: 1900px;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;color: #fff;}
 #life figure.on strong {display: block;font-size: 30px;padding: 50px 50px;text-align: left;letter-spacing: 0.07em;}
-#life figure.on p {opacity: 1;padding: 0 50px;}
+#life figure.on p {opacity: 1;padding: 0 50px;transition: 0.8s;}
 #life figure.on a {margin: 0 50px;}
 #life figure.on a:before {content: "";display: block;width:0;height: 1px;background: #fff;position: absolute;bottom: -5px;left: 0;transition: 0.5s;}
 #life figure.on a:hover:before {width: 150px;}
@@ -231,15 +245,6 @@ html {min-width: 1900px;}
 #footer .f_bottom address br {display: none;}
 
 
-.searCase {position: absolute;top: -100%;left: 0;width: 100vw;height: 100vh;background: rgba(51, 51, 51, 0.8);opacity: 0;visibility: hidden;transition: 0.5s;}
-.searCase.on {top: 0;opacity: 1;visibility: visible;z-index: 1000;}
-
-
-.form {position: absolute;top: 40%;left: 50%;transform: translate(-50%,-50%);width: 100%;text-align: center;}
-.form input {width: 1000px;height: 100px;font-size: 40px;line-height: 100px;border-radius: 50px;padding: 0 50px;}
-.form button {padding: 30px;outline: none;color: #fff;font-size: 50px;}
-.searCase>i {position: absolute;top: 120px;right: 50px;color: #fff;font-size: 100px;cursor: pointer;}
-
 
 
 
@@ -286,9 +291,25 @@ html {min-width: 1900px;}
 
     #header .dd_nav {display: none;font-size: 15px;font-weight: 100;padding: 0 15px;background: #555;}
 
-    #header .rightNav {display: flex;flex-direction: column;margin: 0 0 0 0;padding: 0 20px;position: absolute;bottom: 15px;left: 0;}
-    #header .rightNav i {display: block;font-size: 20px;vertical-align: middle;padding: 10px 0;}
+    #header .rightNav {position: static;display: flex;flex-direction: column;margin: 0 0 0 0;padding: 0 20px;}
+    #header .rightNav .search_btn i {position: relative;display: block;font-size: 20px;vertical-align: middle;padding: 10px 0;cursor: pointer;}
     #header .rightNav i:hover {color: #ddd;}
+
+  
+    #header .rightNav .search_btn i.on {color: #ddd;}
+    #header .rightNav .search_btn i.on:after {content: "\e921";font-family: xeicon!important;display: none;position: absolute;top: 0;left: 0;color: #fff;}
+    #header .rightNav .search_btn i.on:hover:after {color: #ddd;}
+
+    #header .searCase {position: absolute;top: 0;left: 0;background: rgba(0,0,0,0.8);padding: 20px;width: 100vw;height: 100vh;opacity: 0;visibility: hidden;transition: 0.3s;}
+    #header .searCase.on {top: 0;opacity: 1;visibility: visible;z-index: 1000;}
+    #header .searCase form {display: flex;position: absolute;top: 20%;left: 50%;transform: translateX(-50%);width: 100%;justify-content: center;}
+    #header .searCase form input {outline: none;border: none;padding: 5px 20px;border-radius: 20px;}
+    #header .searCase form button {margin-left: 10px;}
+    #header .searCase form button i {display: block;}
+
+    #header .searCase i.xi-close {display: block;position: absolute;top: 15px;right: 15px;font-size: 31px;background: #ddd;color: #333;padding: 5px;border-radius: 50%;}
+
+
     #header .rightNav>ul {display: flex;flex-flow: row wrap;}
     #header .rightNav>ul>li:first-child {width: 100%;}
     #header .rightNav>ul>li:first-child>a {padding: 0;}
@@ -375,7 +396,7 @@ html {min-width: 1900px;}
     #imagine .p_text>strong {display: block;float: none;font-size: 19px;font-weight: 700;line-height: 26px;padding: 0 0;width: auto;text-align: center;margin-bottom: 30px;}
     #imagine .p_text .right {float: none;margin: 0 auto;}
     #imagine .p_text .right strong {display: block;font-size: 19px;font-weight: 400;line-height: 26px;margin-bottom: 5px;}
-    #imagine .p_text .right span {display: block;font-size: 17px;font-weight: 300;margin-bottom: 15px;flex-flow: wrap column;}
+    #imagine .p_text .right span {display: block;font-size: 15px;font-weight: 300;line-height: 1.4;margin-bottom: 15px;flex-flow: wrap column;}
 
     #imagine .popup .color:after {content: "";display: inline-block;width: 15px;height: 15px;border-radius: 50%;margin:0 0 0 7px}
     #imagine .popup .que_auto .color:after {background: #A2948D;}
@@ -425,14 +446,18 @@ html {min-width: 1900px;}
     #life .l_top {}
     #life h2 {font-size: 30px;line-height: 1.4;margin-bottom: 30px;width: auto;margin: 0 auto 20px auto;padding: 0 15px;}
     #life .l_right {display: flex;flex-direction: column;justify-content: center;margin-bottom: 20px;}
-    #life figure {width: auto;height: 200px;background: url(../img/find01.jpg) no-repeat center center/cover;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;overflow: hidden;cursor: pointer;transition: 0.8s;padding: 0 15px;color: #fff;}
+    #life figure {width: auto;height: 200px;background: url(../img/find01.jpg) no-repeat center center/cover;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;overflow: hidden;cursor: pointer;transition: none;padding: 0 15px;color: #fff;}
+
     #life figure.con02 {background: url(../img/find02.jpg) no-repeat center center/cover;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;}
     #life figure.con03 {background: url(../img/find03.jpg) no-repeat center center/cover;color: #fff;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;}
     #life figure.con04 {background: url(../img/find04.jpg) no-repeat center center/cover;background-color: rgba(0,0,0,0.4);background-blend-mode: multiply;}
     #life figure.con04 a {color: #fff;}
 
-    #life figure strong {display: block;font-size: 21px;padding: 20px 0;text-align: left;letter-spacing: 0.07em;}
-    #life figure p {font-size: 15px;font-weight: 100;line-height: 21px;opacity: 1;height: auto;color: #fff;transition: 0.8s;margin-bottom: 20px;}
+    #life figure i {display: inline-block;margin-left: 15px;font-size: 17px;}
+
+    #life figure strong {display: block;font-size: 21px;padding: 20px 0;text-align: left;letter-spacing: 0.07em;text-overflow: ellipsis;white-space: nowrap;}
+    #life figure p {font-size: 15px;font-weight: 100;line-height: 21px;opacity: 1;color: #fff;transition: 0.8s;margin-bottom: 20px;height: 0;overflow: hidden;}
+    #life figure p.oo {height: auto;}
     #life figure a {position: relative;font-size: 13px;font-weight: 300;letter-spacing: 0.05em;margin: 0 0 0 0}
     #life figure a:after {content: "\e940";font-family: xeicon;display: inline-block;font-size: 21px;vertical-align: middle;padding: 0 5px;}
 
@@ -445,7 +470,7 @@ html {min-width: 1900px;}
     #life figure.on strong {display: block;font-size: 21px;padding: 20px 0;text-align: left;letter-spacing: 0.07em;}
     #life figure.on p {font-size: 15px;font-weight: 100;line-height: 21px;opacity: 1;height: auto;color: #fff;transition: 0.8s;margin-bottom: 20px;padding: 0 0 ;}
     #life figure.on a {position: relative;font-size: 13px;font-weight: 300;letter-spacing: 0.05em;margin: 0 0 0 0}
-    #life figure.on a:before {content: "";display: block;width:0;height: 1px;background: #fff;position: absolute;bottom: -5px;left: 0;transition: 0.5s;}
+    #life figure.on a:before {content: "";display: block;width:150px;height: 1px;background: #fff;position: absolute;bottom: -5px;left: 0;transition: 0.5s;}
     #life figure.on a:hover:before {width: 150px;}
     #life figure a:before {content: "";display: block;width:130px;height: 1px;background: #fff;position: absolute;bottom: -5px;left: 0;transition: 0.5s;}
 
@@ -486,7 +511,7 @@ html {min-width: 1900px;}
     #footer .f_bottom .container {display: flex;flex-direction: column;padding: 0 15px;}
     #footer .f_bottom dl {font-size: 15px;font-weight: 100;line-height: 21px;margin-bottom: 20px;}
     #footer .f_bottom dl dt {font-size: 15px;font-weight: 500;}
-    #footer .f_bottom dl dd {font-size: 15px;margin-bottom: 15px;}
+    #footer .f_bottom dl dd {font-size: 13px;font-weight: 100;margin-bottom: 15px;line-height: 1.4;}
 
     #footer .f_bottom .right {margin: 0 0 0 0;}
     #footer .f_bottom .sns {font-size: 27px;text-align: left;margin-bottom: 20px;}
@@ -499,20 +524,13 @@ html {min-width: 1900px;}
 
 
 
-    #footer .f_bottom address {text-align: left;font-size: 13px;font-weight: 100;letter-spacing: 0.075em;}
+    #footer .f_bottom address {text-align: left;font-size: 13px;font-weight: 100;letter-spacing: 0.075em;line-height: 1.4;}
+    #footer .f_bottom address br {display: block;}
+
+    .Mopen {display: block;position: fixed;top: 15px;right: 15px;font-size: 31px;background: #ddd;color: #333;padding: 5px;border-radius: 50%;z-index: 999;}
 
 
-    .Mopen {display: block;position: fixed;top: 15px;right: 15px;font-size: 31px;background: #ddd;color: #333;padding: 5px;border-radius: 50%;z-index: 1000;}
 
-
-
-    .searCase {position: fixed;top: -100%;left: 0;width: 100vw;height: 100vh;background: rgba(51, 51, 51);opacity: 0;visibility: hidden;transition: 0.5s;}
-    .searCase.on {top: 0;opacity: 1;visibility: visible;z-index: 1000;}
-
-
-    .form {position: absolute;top: 40%;left: 50%;transform: translate(-50%,-50%);width: 100%;text-align: center;}
-    .form input {width: 300px;height: 50px;font-size: 40px;line-height: 100px;border-radius: 50px;padding: 0 50px;}
-    .form button {padding: 30px;outline: none;color: #fff;font-size: 50px;}
-    .searCase>i {position: absolute;top:30px;right: 30px;color: #fff;font-size: 50px;cursor: pointer;}
+  
 
 };

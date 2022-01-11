@@ -87,7 +87,10 @@ $(function(){
 
 
     $('#life figure').on('click', function(){
-        $(this).toggleClass('on').siblings().removeClass('on');
+        if ($(window).width() > 768) {
+            $(this).toggleClass('on').siblings().removeClass('on');
+        };
+
     });
 
 
@@ -103,8 +106,9 @@ $(function(){
     });
 
 
-    $('#header .rightNav i').on('click', function(){
-        $('.searCase').addClass('on');
+    $('#header .search_btn>i').on('click', function(){
+        $(this).toggleClass('on')
+        $('.searCase').toggleClass('on');
     });
 
     $('.searCase>i').on('click', function(){
@@ -115,6 +119,12 @@ $(function(){
     $('.Mopen').on('click', function(){
         $('#header').toggleClass('oo');
         $(this).toggleClass('oo');
+        $('.searCase').removeClass('on')
+        $('.search_btn i').removeClass('on')
+    });
+
+    $('.searCase i.xi-close').on('click', function(){
+        $('.searCase').removeClass('on');
     });
 
 
@@ -128,13 +138,25 @@ $(function(){
     });
 
 
+    $('#life figure i').on('click', function(){
+        if ($(window).width() < 769) {
+            $(this).parent().next().toggleClass('oo');
+            $(this).parent().parent().siblings().find('p').removeClass('oo');
+        };
+    });
+
+
     $(window).on('resize', function(){
         $('.d_nav').removeAttr('style');
         $('.dd_nav').removeAttr('style');
     });
 
   
-
+    $('.searCase').on('scroll wheel touchmove', function(){
+        if ($(window).width() < 769) {
+            return false;
+        };
+    });
 
     
 
