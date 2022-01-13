@@ -1,6 +1,20 @@
 $(function(){
 // ------------------------------------------------
 
+    $('.top_banner i').on('click',function(){
+        $('.top_banner').slideUp();
+    });
+
+
+    $('#header .gnb>ul>li').on('mouseover', function(){
+        $('.gnb').addClass('on')
+    });
+
+    $('#header .gnb>ul>li').on('mouseout', function(){
+        $('.gnb').removeClass('on')
+    });
+
+
     $('.nav_top .search>i').on('click', function(){
         $('.searchForm').toggleClass('on');
         $(this).toggleClass('on');
