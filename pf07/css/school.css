@@ -8,7 +8,7 @@
 html {font-size: 20px;min-width: 95rem;}
 body {font-size: 0.8rem;}
 
-/* * {outline: 1px solid #ff0;} */
+* {outline: 1px solid #ff0;}
 
 .container {width: 60rem;margin: 0 auto;padding: 0 0.75rem;}
 
@@ -49,7 +49,7 @@ body {font-size: 0.8rem;}
 #header .gnb .d_nav {display: flex;flex-wrap: wrap;position: absolute;top: 5rem;left: 0;height: calc(100vh - 8rem);width: 100%;font-size: 0.95rem;font-weight: 500;line-height: 1.4;color: #f7f7f7;opacity: 0;visibility: hidden;z-index: 888;}
 #header .gnb .d_nav>li {padding: 2rem;}
 #header .gnb .d_nav>li>a {display: block;margin-bottom: 1rem;padding: 0 2rem 0 0;}
-#header .gnb>ul>li:hover .d_nav {transition: 0.4s;opacity: 1;visibility: visible;}
+#header .gnb>ul>li:hover .d_nav {transition: 0.5s;opacity: 1;visibility: visible;}
 
 #header .dd_nav {font-size: 0.75rem;font-weight: 300;color: #ccc;line-height: 1.5rem;padding: 0 0 0 1rem;border-left: 1px solid #ddd;}
 #header .dd_nav a {display: block;}
@@ -223,7 +223,7 @@ body {font-size: 0.8rem;}
 .top_banner .pop01 {border-right: 1px solid #ddd;}
 .top_banner strong {font-size: 1rem;}
 
-.top_banner i {position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
+.top_banner i {position: absolute;top: 50%;right: 0.75rem;transform: translateY(-50%);}
 
 
 
