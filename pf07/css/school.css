@@ -8,7 +8,7 @@
 html {font-size: 20px;min-width: 95rem;}
 body {font-size: 0.8rem;}
 
-* {outline: 1px solid #ff0;}
+/* * {outline: 1px solid #ff0;} */
 
 .container {width: 60rem;margin: 0 auto;padding: 0 0.75rem;}
 
@@ -464,10 +464,10 @@ body {font-size: 0.8rem;}
     .side_menu {position: fixed;bottom: 0;right: 0;transition: none;}
     .side_menu .side_nav {display: flex;width: 100vw;}
     .side_menu .side_nav>li {flex: 1;width: auto;line-height: 2rem;background: var(--mc);color: #f7f7f7;text-align: center;font-weight: 300;cursor: pointer;}
-    .side_menu .side_nav>li.on {background: #333;}
+    .side_menu .side_nav>li.on {background: #444;}
     .side_menu .side_nav>li>a {display: block;}
-    .side_menu .side_nav>li~li {border-top: 1px solid #666;}
-    .side_menu .side_depth {position: absolute;top: inherit;bottom: 2rem;left: 0;width: 100%;height: auto;background: #333;text-align: center;padding: 1rem;opacity: 0;visibility: hidden;transition: 0.5s;}
+    .side_menu .side_nav>li~li {border-top: none;}
+    .side_menu .side_depth {position: absolute;top: inherit;bottom: 2rem;left: 0;width: 100%;height: auto;background: #444;text-align: center;padding: 1rem;opacity: 0;visibility: hidden;transition: 0.5s;}
     .side_menu .side_depth li {display: inline-block;border-bottom: 1px solid #ddd;line-height: 2rem;margin: 0 0.5rem;font-size: 0.75rem;}
     .side_menu .side_depth.on {opacity: 1;visibility: visible;}
     
