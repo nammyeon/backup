@@ -73,8 +73,11 @@ $(function(){
     });
 
     $('.gnb>ul>li>a').on('click', function(){
-        $(this).next().stop().slideToggle();
-        $(this).parent().siblings().find('.depthNav').slideUp();
+        if($(window).width()<769) {
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.depthNav').slideUp();
+        };
+
     });
 
     $(window).on('resize', function(){
