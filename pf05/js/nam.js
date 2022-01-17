@@ -129,12 +129,19 @@ $(function(){
 
 
     $('.gnb>ul>li>a').on('click', function(){
-        $(this).next().stop().slideToggle();
-        $(this).parent().siblings().find('.d_nav').slideUp();
+        if($(window).width()<769) {
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.d_nav').slideUp();
+        };
+
     });
+
     $('.d_nav>li>a').on('click', function(){
-        $(this).next().stop().slideToggle();
-        $(this).parent().siblings().find('.dd_nav').slideUp();
+        if($(window).width()<769) {
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.dd_nav').slideUp();
+        };
+
     });
 
 
