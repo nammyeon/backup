@@ -95,7 +95,7 @@ $(function(){
             SEC.forEach(e=>{
                 let secTop = e.offsetTop;
                 let secH=e.clientHeight;
-                sct > secTop -(WT-secH)/2 - 400 ? e.classList.add('oo') : e.classList.remove('oo');
+                sct > secTop -(WT-secH)/2 - 650 ? e.classList.add('oo') : e.classList.remove('oo');
             });
     
     });
