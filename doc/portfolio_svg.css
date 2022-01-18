@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
+:root {
+    --mc:#463372;
+    --sc:#F8EBC6;
+    --lc:#f7f7f7;
+    --dc:#444444;
+    --gc:#dddddd;
+}
+
+html {font-size: 20px;}
+body {font-size: 0.8rem;color: var(--dc);}
+
+
+
+#Wrap {min-width: 95rem;}
+
+
+
+#header h1 {position: fixed;top: 3rem;left: 3rem;z-index: 999;}
+#header h1 a {display: block;width: 15rem;}
+
+.st0 {fill: #52416D;animation: pathChange 2s infinite linear;}
+.text1 {fill: #c24d53;font-family: 'Montserrat', sans-serif;font-size: 2.5rem;} 
+.text2 {fill: #4d8dc2;font-family: 'Montserrat', sans-serif;font-size: 2.5rem;} 
+@keyframes colorChange {
+    0% {fill: #52416D;}
+    50% {fill: #c24d53;}
+    100% {fill: #52416D;}
+}
+
+@keyframes pathChange {
+    0% {d:path("M486.4,149.86c-28.69,86.45-98.8,146.22-237.05,131.08C119.2,266.68,16.06,222.15,12.29,149.86 C6.72,42.69,120.09,39.56,249.35,18.78C405.52-6.31,509.2,81.15,486.4,149.86z")}
+    25% {d:path("M471.98,109.69c0.26,51.43-51.43,141.06-194.69,162.37c-69.03,10.27-229.97,14.74-242.45-56.57C9.12,68.55,109.04,18.59,249.35,18.78C352.71,18.93,471.62,37.3,471.98,109.69z")}
+    50% {d:path("M458.76,158.18c0.26,51.43-84.47,49.9-181.47,113.88c-58.26,38.43-234.38-24.94-246.86-96.24C4.71,28.88,128.35-31.22,249.35,18.78C344.88,58.27,458.39,85.79,458.76,158.18z")}
+    75% {d:path("M471.98,109.69c12.39,49.92-145.47,182.2-295.35,5.14c-45.09-53.27,17.63,300.49-141.8,100.65C-58.19,98.88,115.89-48.68,267.73,76.63C356.63,150,423.49-85.73,471.98,109.69z")}
+    100% {d:path("M486.4,149.86c-28.69,86.45-98.8,146.22-237.05,131.08C119.2,266.68,16.06,222.15,12.29,149.86 C6.72,42.69,120.09,39.56,249.35,18.78C405.52-6.31,509.2,81.15,486.4,149.86z")}
+}
+
+
+
+
+
+#header nav {position: fixed;top: 50%;right: 3rem;transform: translateY(-50%);z-index: 999;}
+#header .cover_btn {position: fixed;top: 3rem;right: 3rem;z-index: 999;}
+#header .cover_btn i {font-size: 1.5rem;padding: .5rem;background: var(--lc);}
+
+
+
+#header nav li a {position: relative;display: block;width: 3rem;height: 1rem;text-indent: -9999px;}
+#header nav li a:after {content: "";position: absolute;top: 0.35rem;right: 0;display: block;width: 40%;height: 0.3rem;background: var(--dc);border-radius: 0.15rem;transition: 0.3s;}
+#header nav li.on a:after {width: 70%;}
+
+
+
+.gooey {position: relative;filter:url('#bbq');height: 4em;}
+.gooey span {position: absolute;top: 0;left: 0;display: block;width: 2.5rem;height: 2.5rem;background: var(--sc);border-radius: 0.5rem;text-align: center;line-height: 2.5rem;color: var(--lc);}
+.gooey span:nth-child(2) {animation: txtAni 3s infinite linear;}
+
+@keyframes txtAni {
+    0% {left: 0;}
+    50% {left: 7rem;}
+    100% {left: 0;}
+}
+
+
+.box_mask {width: 20rem;}
+
+.st7 {animation: maskAni 2s infinite;}
+
+@keyframes maskAni {
+    0% {d:path("M287.53,360.27H115.61c-48.89,0-88.9-40-88.9-88.9V114.88c0-48.89,40-88.9,88.9-88.9h171.92c48.89,0,88.9,40,88.9,88.9v156.49C376.43,320.26,336.42,360.27,287.53,360.27z")}
+    50% {d:path("M229.31,360.27h-55.47c-80.92,0-147.12-66.21-147.12-147.12v0C26.71,110.2,89.35,17.9,192.29,17.9h15.43c80.92,0,168.71,74.29,168.71,155.2v40.04C376.43,294.06,310.22,360.27,229.31,360.27z")}
+    100% {d:path("M287.53,360.27H115.61c-48.89,0-88.9-40-88.9-88.9V114.88c0-48.89,40-88.9,88.9-88.9h171.92c48.89,0,88.9,40,88.9,88.9v156.49C376.43,320.26,336.42,360.27,287.53,360.27z")}
+}
+
+
+
+.section {background: url(./lib/base/bg_pattern02.png);}
+.section .mockup {background: url(./lib/base/mockup.png) no-repeat center top/100%;padding: 7% 12% 8% 12%;}
+.section .mockup figure {position: relative;padding-bottom: 60%;overflow: hidden;}
+.section .mockup figure img {position: absolute;top: 0;left: 0;width: 100%;transition: 5s;cursor: pointer;}
+.section img {max-width: 100%;}
+
+.section .mockup figure:hover img {transform: translateY(-100%);top: 100%;}
+
+.container {position: relative;display: grid;grid-template-columns: repeat(2,1fr);gap: 2rem;align-items: center;width: 70rem;margin: 0 auto;}
+
+.section .description h3 {font-family: 'Montserrat', sans-serif;font-size: 2.5rem;font-weight: 200;margin-bottom: 1rem;}
+.section .description p {font-size: 0.75rem;font-weight: 300;margin-bottom: 2rem;}
+.section .description dl {display: inline-flex;line-height: 1.5rem;border-bottom: 1px solid var(--gc);}
+.section .description dl dt {width: 6rem;}
+.section .description dl dt:before {content: "-";margin-right: 0.5rem;}
+.section .description dl:last-of-type {margin-bottom: 2rem;}
+
+.section .description dd span {display: inline-block;width: 0.6rem;height: 0.6rem;border-radius: 50%;vertical-align: middle;}
+.section .description dd strong {vertical-align: middle;margin-right: 1rem;}
+.section .description dd span:nth-of-type(1) {background: #333;}
+.section .description dd span:nth-of-type(2) {background: #666666;}
+.section .description dd span:nth-of-type(3) {background: #947284;}
+
+
+.section .description ul {display: flex;gap: 0.5rem;}
+.section .description ul a {display: block;background: var(--mc);color: var(--lc);line-height: 3rem;padding: 0 2rem;font-size: 1rem;font-weight: 100;border-radius: 0.3rem;}
+
+
+
+.intro figure {border-radius: 48% 52% 16% 84% / 82% 16% 84% 18%;overflow: hidden;animation: int_movie 4s infinite linear;}
+.intro .container:after {content: "";position: absolute;top: 3rem;right: 3rem;display: block;width: 5rem;height: 5rem;background: var(--sc);border-radius: 50%;opacity: 0.7;}
+
+.intro figure:hover {border-radius: 43% 57% 36% 64% / 62% 24% 76% 38%;}
+.intro figure img {width: 100%;}
+
+@keyframes int_movie {
+    0% {border-radius: 48% 52% 16% 84% / 82% 16% 84% 18%;}
+    25% {border-radius: 43% 42% 36% 64% / 62% 24% 76% 38%;}
+    50% {border-radius:51% 49% 53% 47% / 47% 61% 39% 53%; }
+    25% {border-radius: 43% 57% 36% 64% / 62% 24% 76% 38%;}
+}
+
+.intro .slogan h2 {font-size: 3rem;font-weight: 700;margin-bottom: 2rem;text-indent: -4px;}
+.intro .slogan p {font-size: 0.75rem;font-weight: 300;margin-bottom: 1rem;}
+.intro .slogan strong {display: block;font-size: 1rem;font-weight: 500;}
+
+.intro .wheel {position: absolute;bottom: 3rem;left: 50%;transform: translateX(-50%);width: 1.5rem;height: 2.5rem;border: 2px solid #444;font-size: 0;border-radius: 0.7rem;opacity: 0.5;}
+.intro .wheel span {position: absolute;top: 0.3rem;left: 50%;transform: translateX(-50%);width: 0.2rem;height: 0.5rem;background: #444;border-radius: 0.1rem;animation: wheel 0.8s infinite;}
+
+@keyframes wheel {
+    to {top: 0.6rem}
+}
+
+
+.portfolio_01 {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer .toTop {position: fixed;bottom: 3rem;right: 3rem;z-index: 999;}
+#footer .toTop i {font-size: 1.5rem;padding: .5rem;background: var(--lc);}
+#footer address {position: fixed;bottom: 3rem;left: 3rem;z-index: 999;}
