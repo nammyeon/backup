@@ -5,12 +5,18 @@ $(function(){
         $(this).toggleClass('on');
     });
 
+    $('.header .menu').on('scroll wheel touchmove', function(){
+        return false;
+    });
+
+
     $('.main_slider').slick({
         arrows:false,
         autoplay:true,
         autoplaySpeed:2000,
         pauseOnFocus:false,
         pauseOnHover:false,
+        dots:true,
     });
 
     $('.main_visual figure').eq(1).addClass('on');
