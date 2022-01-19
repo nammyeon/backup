@@ -8,7 +8,7 @@
 html {font-size: 20px;min-width: 95rem;}
 body {font-size: 0.8rem;}
 
-/* * {outline: 1px solid #ff0;} */
+* {outline: 1px solid #ff0;}
 
 .container {width: 60rem;margin: 0 auto;padding: 0 0.75rem;}
 
@@ -128,19 +128,23 @@ body {font-size: 0.8rem;}
 
 
 #news {padding: 5rem 0;}
+#news .container {padding: 0 0;}
+#news .container>* {padding: 0 0.75rem;}
 #news p {font-size: 0.95rem;font-weight: 300;margin-bottom: 0.5rem;}
 #news h2 {display: inline-block;font-size: 1.55rem;font-weight: 700;margin-bottom: 2rem;}
 
 #news .tab_news {display: inline-block;float: right;}
 #news .tab_news ul li {display: inline-block;position: relative;font-size: 0.95rem;font-weight: 700;line-height: 1.55rem;padding: 0 2rem;cursor: pointer;}
+#news .tab_news ul li:last-child {padding: 0 0 0 2rem;}
 #news .tab_news ul li:after {content: "";display: block;position: absolute;top: 0.5rem;left: 50%;transform: translateX(-50%);width: 0.25rem;height: 0.25rem;background: var(--mc);border-radius: 50%;opacity: 0;transition: 0.5s;}
 #news .tab_news ul li.on:after {top: -0.5rem;opacity: 1;}
 
 #news .newWrap {position: relative;height: 23.8rem;}
-#news .new_content {position: absolute;top: 0;left: 0;width: 58.5rem;opacity: 0;visibility: hidden;}
+#news .new_content {position: absolute;top: 0;left: 0;width: 100%;opacity: 0;visibility: hidden;}
 #news .new_content.on {opacity: 1;visibility: visible;}
-#news .new_content .case {width: 13.5rem;}
-#news .new_content .case figure {width: 13.5rem;height: 16.5rem;margin-bottom: 1rem;}
+#news .new_content .case {width: 18.5rem;padding: 0 0.75rem;}
+#news .new_content .case figure {height: 16.5rem;margin-bottom: 1rem;}
+#news .new_content .case figure img {width: 100%;}
 
 #news .new_content .case strong {display: block;font-size: 0.95rem;width: 13.5rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 #news .new_content .case strong:after {content: "";display: block;width: 4rem;height: 1px;background: var(--mc);margin: 1rem 0;}
@@ -396,11 +400,14 @@ body {font-size: 0.8rem;}
 
 
     #news {padding: 5rem 0;text-align: center;}
+    #news .container {padding: 0 0;}
+    #news .container>* {padding: 0 0.75rem;}
     #news p {font-size: 0.95rem;font-weight: 300;margin-bottom: 0.5rem;}
     #news h2 {display: inline-block;font-size: 1.55rem;font-weight: 700;margin-bottom: 2rem;}
 
     #news .tab_news {display: block;float: none;margin-bottom: 1rem;}
     #news .tab_news ul li {display: inline-block;position: relative;font-size: 0.95rem;font-weight: 700;line-height: 1.55rem;padding: 0 0.1rem 0 0.3rem;cursor: pointer;}
+    #news .tab_news ul li:last-child {padding: 0 0.1rem 0 0.3rem;}
     #news .tab_news ul li~li:before {content: "";display: block;position: absolute;top: 50%;left: 0;transform: translateY(-50%);width: 1px;height: 0.5rem;background: #999;}
     #news .tab_news ul li:after {content: "";display: block;position: absolute;top: 0.5rem;left: 50%;transform: translateX(-50%);width: 0.25rem;height: 0.25rem;background: var(--mc);border-radius: 50%;opacity: 0;transition: 0.5s;}
     #news .tab_news ul li.on:after {top: -0.5rem;opacity: 1;}
@@ -410,7 +417,7 @@ body {font-size: 0.8rem;}
     #news .new_content.on {opacity: 1;visibility: visible;}
     #news .new_content .case {transform: scale(1);text-align: center;}
     #news .new_content .case figure {width: auto;height: auto;margin-bottom: 1rem;}
-    #news .new_content .case figure img {margin: 0 auto;}
+    #news .new_content .case figure img {margin: 0 auto;width: auto;}
 
     #news .new_content .case strong {display: block;font-size: 0.95rem;width: 80%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0 auto;}
     #news .new_content .case strong:after {content: "";display: none;width: 4rem;height: 1px;background: var(--mc);margin: 1rem 0;}
