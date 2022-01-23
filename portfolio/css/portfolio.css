@@ -277,14 +277,15 @@ body {font-size: 0.8rem;color: var(--dc);}
     #header nav li a:after {content: "";position: absolute;top: 0.35rem;right: 0;display: block;width: 40%;height: 1px;background: var(--dc);border-radius: 0.15rem;transition: 0.3s;}
     #header nav li.on a:after {width: 70%;}
 
-
     .intro .intro_container {position: relative;width: auto;margin: 0 auto;padding: 0 0.75rem;}
     .intro .slogan {}
     .intro .slogan span {font-size: 0.95rem;letter-spacing: 0.05em;line-height: 1.4;}
     .intro .slogan h2 {font-size: 2rem;font-weight: 900;margin-bottom: 2rem;text-indent: -2px;}
 
-    .intro .introduce {width: 100%;height: 4rem;background: var(--mc);margin: 0 auto;}
-    .intro .me {position: absolute;bottom: -2rem;right: 1rem;width: 3rem;}
+    .intro .introduce {height: auto;text-align: center;transform: rotate(90deg);padding: 3rem 0;}
+    .intro .introduce img {height: 100%;margin: 0 auto;}
+    .intro .me {position: absolute;bottom: -2rem;right: 2rem;width: 6rem;}
+
 
 
 
@@ -305,7 +306,7 @@ body {font-size: 0.8rem;color: var(--dc);}
     .section:nth-child(even) {border-top: 2px dashed var(--gc);border-bottom: 2px dashed var(--gc);}
     .section img {max-width: 100%;}
 
-    .container {width: auto;margin: 0 auto;z-index: 888;padding: 0 0.75rem 2rem 0.75rem;}
+    .container {width: auto;margin: 0 auto;z-index: 888;padding: 0 0.75rem 0 0.75rem;}
 
     .section .text {display: flex;align-items: baseline;margin-bottom: 2rem;}
     .section h3 {font-size: 2rem;font-weight: 700;}
@@ -317,7 +318,7 @@ body {font-size: 0.8rem;color: var(--dc);}
     .section .itmcase figure img {position: absolute;top: 0;left: 0;width: 100%;transition: 5s;cursor: pointer;}
     .section .itmcase:hover figure img {transform: translateY(-100%);top: 100%;}
 
-    .section .description {width: 100%;padding: 2rem 1.3rem;}
+    .section .description {width: 100%;padding: 2rem 1.3rem 0 1.3rem;}
 
     .section .description h3::after {content: "";display: block;width: 100%;height: 2px;background:#ffba00;margin: 1rem 0;}
     .section .description h3 em {display: inline-block;font-size: 1rem;margin-right: 1rem;}
