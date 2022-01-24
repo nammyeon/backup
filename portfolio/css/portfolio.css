@@ -282,9 +282,9 @@ body {font-size: 0.8rem;color: var(--dc);}
     .intro .slogan span {font-size: 0.95rem;letter-spacing: 0.05em;line-height: 1.4;}
     .intro .slogan h2 {font-size: 2rem;font-weight: 900;margin-bottom: 2rem;text-indent: -2px;}
 
-    .intro .introduce {height: auto;text-align: center;transform: rotate(90deg);padding: 3rem 0;}
-    .intro .introduce img {height: 100%;margin: 0 auto;}
-    .intro .me {position: absolute;bottom: -2rem;right: 2rem;width: 6rem;}
+    .intro .introduce {height: auto;width: 90%;text-align: center;}
+    .intro .introduce img {height: auto;width: 100%;margin: 0 auto;}
+    .intro .me {position: absolute;bottom: -2rem;right: 0.75rem;width: 4rem;}
 
 
 
