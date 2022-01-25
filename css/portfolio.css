@@ -92,6 +92,7 @@ body {font-size: 0.8rem;color: var(--dc);}
 .section .description dl {margin-bottom: 1rem;letter-spacing: 0.05em;}
 .section .description dl dt {display: inline-block;font-size: 1rem;font-weight: 400;letter-spacing: 0.1em;line-height: 1.4;width: 7.5rem;}
 .section .description dl:first-of-type dt {vertical-align: top;}
+.section .description dl:nth-child(3) dt {vertical-align: top;}
 .section .description dl dd {display: inline-block;font-size: 0.75rem;font-weight: 300;line-height: 1.2;}
 .section .description dl:last-of-type {margin-bottom: 3rem;}
 
