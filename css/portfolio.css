@@ -86,7 +86,7 @@ body {font-size: 0.8rem;color: var(--dc);}
 .section .itmcase figure img {position: absolute;top: 0;left: 0;width: 100%;transition: 5s;cursor: pointer;}
 .section .itmcase:hover figure img {transform: translateY(-100%);top: 100%;}
 
-.section.on .itmcase {transform: translateY(0);opacity: 1;transition: 0.3s;}
+.section.on .itmcase {transform: translateY(0);opacity: 1;transition: 0.2s;}
 
 .section .description {flex: 1;}
 .section .description dl {margin-bottom: 1rem;letter-spacing: 0.05em;}
@@ -322,7 +322,7 @@ body {font-size: 0.8rem;color: var(--dc);}
     .section .itmcase figure img {position: absolute;top: 0;left: 0;width: 100%;transition: 5s;cursor: pointer;}
     .section .itmcase:hover figure img {transform: translateY(-100%);top: 100%;}
 
-    .section.on .itmcase {transform: translateY(0);opacity: 1;transition: 0.5s;}
+    .section.on .itmcase {transform: translateY(0);opacity: 1;transition: 0.3s;}
 
     .section .description {flex: 1;margin-bottom: 0;order: 1;}
 
