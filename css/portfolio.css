@@ -379,7 +379,8 @@ body {font-size: 0.8rem;color: var(--dc);}
     
     .etc .etc_container {position: relative;width: auto;margin: 0 auto;color: var(--dc);z-index: 888;}
     .etc h3 {margin-bottom: 2rem;padding: 0 0.75rem;text-align: center;font-size: 2rem;}
-    .etc .etc_wrap {display: flex;flex-direction: column;}
+    .etc h3:after {display: none;}
+    .etc .etc_wrap {display: flex;flex-direction: column;padding: 0 0;}
     .etc .etc_case {flex: 1;margin: 0 0.75rem;}
     .etc .text {flex-direction: column;margin-bottom: 1rem;}
     .etc .text:after {display: none;}
@@ -400,7 +401,7 @@ body {font-size: 0.8rem;color: var(--dc);}
 
 
     .etc .s_btn {display: block;font-size: 1.5rem;}
-    .etc .s_btn i {position: absolute;top: 4.3rem;}
+    .etc .s_btn i {position: absolute;top: 4rem;}
     .etc .s_btn i.xi-angle-left {left: 0;}
     .etc .s_btn i.xi-angle-right {right: 0;}
 
