@@ -55,9 +55,12 @@ body {font-size: 0.8rem;color: var(--dc);}
 
 .intro .introduce {}
 .intro .main_me {position: relative;width: 17rem;margin-left: auto;}
-.intro .main_me img {width: 100%;}
-.intro .main_me pre {position: absolute;top: -2rem;right: 0;width: 17rem;height: 17rem;border-radius: 50%;overflow: hidden;font-family: 'Open Sans', sans-serif;font-size: 0.75rem;z-index: -1;}
+.intro .main_me img {width: 100%;transform: translateX(-10rem);opacity: 0;}
+.intro .main_me pre {position: absolute;top: -2rem;right: 0;transform: translateX(10rem);opacity: 0;width: 17rem;height: 17rem;border-radius: 50%;overflow: hidden;font-family: 'Open Sans', sans-serif;font-size: 0.75rem;z-index: -1;}
 
+
+.intro.on .main_me img {transform: translateX(0);opacity: 1;transition: 0.5s;}
+.intro.on .main_me pre {transform: translateX(0);opacity: 1;transition: 0.5s;}
 
 
 .intro .wheel {position: absolute;bottom: 3rem;left: 50%;transform: translateX(-50%);width: 1.5rem;height: 2.5rem;border: 2px solid var(--dc);font-size: 0;border-radius: 0.7rem;opacity: 0.5;}
