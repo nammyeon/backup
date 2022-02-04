@@ -317,8 +317,8 @@ body {font-size: 0.8rem;color: var(--dc);}
 
     .intro .introduce {}
     .intro .main_me {position: relative;width: 100%;margin: 0 auto;text-align: center;z-index: 1;}
-    .intro .main_me img {width: 10rem;transform: translateX(-10rem);opacity: 0;}
-    .intro .main_me pre {position: absolute;top: -2rem;right: 50%;transform: translateX(10rem);opacity: 0;width: 13rem;height: 13rem;border-radius: 50%;overflow: hidden;font-family: 'Open Sans', sans-serif;font-size: 0.75rem;z-index: -1;}
+    .intro .main_me img {width: 10rem;transform: translateX(-10rem);opacity: 0;transition: 0.5s;}
+    .intro .main_me pre {position: absolute;top: -2rem;right: 50%;transform: translateX(10rem);opacity: 0;width: 13rem;height: 13rem;border-radius: 50%;overflow: hidden;font-family: 'Open Sans', sans-serif;font-size: 0.75rem;transition: 0.5s;z-index: -1;}
 
 
     .intro.on .main_me img {transform: translateX(0);opacity: 1;transition: 0.5s;}
