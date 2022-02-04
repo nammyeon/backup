@@ -352,7 +352,7 @@ body {font-size: 0.8rem;color: var(--dc);}
     .pf .text h2 span {display: inline-block;font-size: 0.75rem;font-weight: 100;margin-right: 0.5rem;}
     .pf .text strong {display: inline-block;font-size: 0.75rem;font-weight: 300;margin: 0 0 0 0;float: right;line-height: 1.25rem;}
 
-    .pf .text dl {margin-bottom: 0.5rem;padding: 0 1rem;}
+    .pf .text dl {margin-bottom: 0.5rem;padding: 0 0 0 1rem;}
     .pf .text dt {display: inline-block;width: 5rem;font-size: 0.85rem;}
     .pf .text dd {display: inline-block;font-weight: 300;vertical-align: top;}
     .pf .text dd br {display: block;}
