@@ -501,11 +501,11 @@ body {font-size: 0.8rem;color: var(--dc);}
     
     .profile .Pro_container {display: flex;flex-direction: column;align-items: center;width: auto;margin: 0 auto;padding: 1rem;overflow: hidden;}
     .profile .leftPro {width: 100%;padding: 1.5rem;margin: 0 auto 2rem auto;border: 3px solid var(--mc);border-radius: 2rem;}
-    .profile .leftPro .title {display: block;font-size: 1.05rem;font-weight: 700;margin-bottom: 2rem;color: var(--sc);}
-    .profile .leftPro figure {width: 10rem;height: 10rem;border-radius: 50%;margin: 0 auto 1.5rem auto;overflow: hidden;} 
+    .profile .leftPro .title {display: block;font-size: 1.05rem;font-weight: 700;margin-bottom: 1rem;color: var(--sc);}
+    .profile .leftPro figure {width: 8rem;height: 8rem;border-radius: 50%;margin: 0 auto 1rem auto;overflow: hidden;} 
 
-    .profile .leftPro .personal strong {display: block;font-size: 1.05rem;font-weight: 500;letter-spacing: 0.05em;margin-bottom: 0.5rem;text-align: center;}
-    .profile .leftPro .personal em {display: block;font-size: 0.85rem;margin-bottom: 1.5rem;text-align: center;}
+    .profile .leftPro .personal strong {display: block;font-size: 0.95rem;font-weight: 500;letter-spacing: 0.05em;margin-bottom: 0.5rem;text-align: center;}
+    .profile .leftPro .personal em {display: block;font-size: 0.75rem;margin-bottom: 1rem;text-align: center;}
     .profile .leftPro .personal span {display: block;font-size: 0.75rem;letter-spacing: 0.05em;margin-bottom: 0.5rem;}
     .profile .leftPro .personal span i {margin-right: 0.5rem;}
 
@@ -524,7 +524,7 @@ body {font-size: 0.8rem;color: var(--dc);}
 
 
     .profile .site {width: 100%;padding: 0 0;text-align: center;}
-    .profile .site strong {display: block;font-size: 1.5rem;font-weight: 700;letter-spacing: 0.05em;margin-bottom: 1rem;color: var(--sc);}
+    .profile .site strong {display: block;font-size: 1.05rem;font-weight: 700;letter-spacing: 0.05em;margin-bottom: 1rem;color: var(--sc);}
     .profile .site a {display: inline-block;text-align: center;width:7.5rem;line-height: 2rem;background: var(--mc);margin: 0 0.3rem;font-size: 0.95rem;}
 
 
