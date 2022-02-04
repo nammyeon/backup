@@ -15,6 +15,7 @@ $(function(){
 
     $('.cover_btn').on('click', function(){
         $(this).toggleClass('on');
+        $('.cover_btn span').toggleClass('on');
         $('#cover').stop().slideToggle(); //fadeToggle
     });
     
@@ -27,6 +28,7 @@ $(function(){
         $('.cover_btn').removeClass('on');
         $('.cNav li a').removeClass('on');
         $('.cNav .d_nav').slideUp();
+        $('.cover_btn span').removeClass('on');
     });
     
     $('#cover').on('scroll wheel touchmove', function(){
@@ -49,6 +51,14 @@ $(function(){
 
 
     // mobile
+
+    $('.pf .m_img figure').on('click',function(){
+        $(this).toggleClass('on');
+    });
+
+    $('.etc .case figure').on('click',function(){
+        $(this).toggleClass('on');
+    });
         
     var slider = $('.etc_wrap');  
     var slickOptions = {
@@ -69,6 +79,7 @@ $(function(){
             slider.not('.slick-initialized').slick(slickOptions);
         }
     });
+
 
     $('.s_btn i.xi-angle-left').on('click', function(){
         $('.etc_wrap').slick('slickPrev');
