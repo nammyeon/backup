@@ -152,7 +152,8 @@ body {font-size: 0.8rem;color: var(--dc);}
 
 
 .etc {height: 100vh;overflow: hidden;background: var(--gc);}
-.etc .container {display: flex;justify-content: space-between;align-items: center;width: 70rem;margin: 0 auto;height: 100%;}
+.etc .container {width: 70rem;margin: 0 auto;}
+.etc .etc_wrap {display: flex;justify-content: space-between;align-items: center;}
 .etc .container .case {background: var(--lc);padding: 2rem 1rem;border-radius: 1rem;}
 .etc h2 {display: inline-block;font-size: 1.85rem;font-weight: 700;margin-bottom: 1rem;}
 .etc h2 span {display: inline-block;font-size: 1rem;font-weight: 100;margin-right: 0.5rem;}
@@ -409,12 +410,12 @@ body {font-size: 0.8rem;color: var(--dc);}
 
 
 
-
-
-
     .etc {height: 100vh;overflow: hidden;background: var(--gc);}
     .etc .container {display: flex;flex-direction: column;justify-content: space-between;align-items: center;width: auto;margin: 0 auto;height: auto;}
-    .etc .etc_wrap {position: relative;width: 100%;}
+    .etc .etc_wrap {position: relative;width: 100%;flex-flow: row wrap;}
+        
+    .etc .container {width: auto;margin: 0 auto;}
+    .etc .etc_wrap {display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;}
     
     .etc .container .case {background: var(--lc);padding: 2rem 1rem;border-radius: 1rem;margin: 0 0.75rem 1rem 0.75rem;}
     .etc h2 {display: inline-block;font-size: 1.25rem;font-weight: 700;margin-bottom: 1rem;}
@@ -432,7 +433,7 @@ body {font-size: 0.8rem;color: var(--dc);}
 
     .etc .text ul li a {display: block;text-align: center;font-size: 0.85rem;background: var(--lc);width: 7rem;line-height: 2.3rem;}
      
-    .etc .etc_wrap .slick-dots {display: flex;justify-content: center;gap: 0.75rem;}
+    .etc .etc_wrap .slick-dots {display: flex;justify-content: center;gap: 0.75rem;margin: 0 auto;}
     .etc .etc_wrap .slick-dots li {width: 0.5rem;height: 0.5rem;background: var(--lc);border-radius: 50%;}
     .etc .etc_wrap .slick-dots li.slick-active {background: var(--dc);}
     .etc .etc_wrap .slick-dots li button {display: none;}
