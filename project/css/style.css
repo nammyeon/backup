@@ -1,0 +1,57 @@
+:root{
+    --main: #C34255;
+}
+
+
+#main_visual {position: relative;}
+#main_visual .slogan {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 390px;line-height: 130px;background: rgba(255,255,255,0.8);border: 1px solid #333;text-align: center;}
+#main_visual .slogan h2 {position: relative;font-size: 20px;font-weight: 700;letter-spacing: 0.07em;}
+#main_visual .slogan h2:after {content: "";display: block;width: 1px;height: 210px;background: #333;position: absolute;top: 100%;left: 50%;transform: translateX(-50%);}
+
+
+#se01 {}
+#se01 > .se01Wrap {text-align: center;;}
+#se01 h2 {display: inline-block;position: relative;text-align: center;font-size: 37px;font-weight: 700;letter-spacing: 0.05em;margin-bottom: 80px;}
+#se01 h2:after {content: "";display: block;width: 55px;height: 10px;background: var(--main);position: absolute;left: 0;bottom: -15px;}
+#se01 .desc {display: flex;align-items: center;text-align: left;}
+#se01 .desc .left {width: 65%;}
+#se01 .desc .left strong {display: block;font-size: 20px;font-weight: 700;letter-spacing: 0.2em;line-height: 1.2;margin-bottom: 25px;}
+#se01 .desc .left p {margin-bottom: 25px;line-height: 1.625;font-weight: 300;}
+#se01 .desc .right {width: 35%;text-align: center;}
+#se01 .desc .right .share {color: var(--main);margin-bottom: 70px;}
+#se01 .desc .right .share a {display: inline-block;width: 40px;height: 40px;line-height: 40px;border: 1px solid var(--main);border-radius: 50%;font-size: 20px;font-weight: 900;margin-bottom: 15px;}
+#se01 .desc .right .share a:first-child {margin-right: 10px;}
+#se01 .desc .right .share span {display: block;font-weight: 700;letter-spacing: 0.13em;font-size: 15px;}
+#se01 .desc .right .contact {color: var(--main);font-size: 20px;font-weight: 900;}
+#se01 .desc .right .contact i {display: block;width: 40px;height: 40px;line-height: 40px;border: 2px solid var(--main);border-radius: 50%;font-size: 20px;margin: 0 auto 15px auto;}
+#se01 .desc .right .contact span {display: inline-block;font-weight: 700;letter-spacing: 0.13em;font-size: 15px;border-bottom: 1px solid var(--main);}
+
+
+
+#se02 {margin-bottom: 50px;}
+#se02 .se02Wrap {display: flex;background: #B2D7DD;}
+#se02 .se02Wrap .case {flex: 1;}
+#se02 .se02Wrap .case.c01 strong {position: relative;display: inline-block;font-weight: 700;letter-spacing: 0.13em;font-size: 15px;padding: 50px 60px;border: 1px solid #333;margin: 50px 0 0 50px}
+#se02 .se02Wrap .case.c01 strong:after {content: "";display: block;width: 140px;height: 1px;background: #333;position: absolute;top: 50%;left:100%;transform: translateY(-50%);}
+#se02 .se02Wrap .case.c02 img {width: 100%;position: relative;z-index: 1;}
+#se02 .se02Wrap .case.c03 {padding: 2%;}
+#se02 .se02Wrap .case.c03 strong {display: block;font-size: 20px;font-weight: 700;letter-spacing: 0.2em;line-height: 1.2;margin-bottom: 15px;}
+#se02 .se02Wrap .case.c03 p {margin-bottom: 15px;line-height: 1.625;font-weight: 300;}
+#se02 .se02Wrap .case.c03 p:last-child {margin-bottom: 0;}
+#se02 .se02Wrap .case.c03 a p {position: relative;display: inline-block;font-weight: 700;letter-spacing: 0.13em;font-size: 15px;color: var(--main);}
+#se02 .se02Wrap .case.c03 a:hover p::after {content: "";display: block;width: 100%;height: 1px;background: var(--main);position: absolute;top: 100%;left: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

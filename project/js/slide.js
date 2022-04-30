@@ -1,0 +1,10 @@
+$(function(){
+    $(".slideCase").slick({
+        arrows:false,
+        autoplay:true,
+        pauseOnHover:false,
+        pauseOnFocus:false,
+        fade:true,
+        speed:3000,
+    })
+})
