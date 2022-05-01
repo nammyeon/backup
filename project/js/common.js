@@ -9,6 +9,7 @@ $(function(){
         if ($(".gnb").hasClass("on")){
             $(this).parent().find(".depth").stop().slideToggle();
             $(this).parent().siblings().find(".depth").slideUp();
+            $(this).toggleClass("on")
         }else {
             $(this).parent().find(".depth").stop().slideUp();
             $(this).parent().siblings().find(".depth").slideUp();

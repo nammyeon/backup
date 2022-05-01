@@ -5,7 +5,7 @@
 #wrap {}
 #header {line-height: 100px;}
 #header > div {display: flex;align-items: center;}
-#header h1.logo img {width: 200px;}
+#header h1.logo img {width: 80px;}
 #header .search {margin-left: auto;}
 #header .search input {border: none;width: 100px;}
 #header .search i {display: inline-block;line-height: 26px;cursor: pointer;}
@@ -24,7 +24,8 @@
 #header .gnb.on nav {top: 0;opacity: 1;visibility: visible;}
 #header .menu > li {line-height: 1.4;border-bottom: 1px solid #ededed;padding: 10px 0;}
 #header .menu > li > a {display: inline-block;font-size: 18px;font-weight: 700;line-height: 1.4;}
-#header .menu > li > i {display: inline-block;float: right;padding: 5px 0;}
+#header .menu > li > i {display: inline-block;float: right;padding: 5px 0;transition: 0.4s;}
+#header .menu > li > i.on {transform: rotate(180deg);}
 #header .menu > li > .depth {display: none;}
 #header .menu > li > .depth > li {margin: 5px 0;}
 #header .menu > li > .depth > li > a {display: inline-block;font-size: 13px;font-weight: 300;line-height: 1.615;}
